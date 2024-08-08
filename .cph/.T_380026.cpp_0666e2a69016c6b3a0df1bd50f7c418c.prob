@@ -1,0 +1,1 @@
+{"name":"Local: T_380026","url":"c:\\Users\\you06\\OneDrive\\CODE\\T_380026.cpp","tests":[{"id":1723114719819,"input":"5 1\n1 2\n1 3\n2 4\n3 5","output":"2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\you06\\OneDrive\\CODE\\T_380026.cpp","group":"local","local":true}
