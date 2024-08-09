@@ -1,13 +1,13 @@
 #include <bits/stdc++.h>
 #define N 10'0010
 using namespace std;
-int res=INT_MIN,n,d,vis[N];
+int res=0,n,d,vis[N];
 vector <int> arr[N];
 void _Search(int point,int step,int ans)
 {
-    //cout<<point<<step<<ans<<endl;
-    if(step>d) {res=max(res,ans);return;}
-    else for(int i=0;i<arr[point].size();i++) if(!vis[arr[point][i]]) {vis[arr[point][i]]=true;_Search(arr[point][i],step+1,ans+1);vis[arr[point][i]]=false;/*cout<<point<<step<<ans<<"to\n";*/}
+    //cout<<point<<step<<" "<<ans<<endl;
+    if(step>=d) {res+=ans;return;}
+    for(int i=0;i<arr[point].size();i++) if(!vis[arr[point][i]]) {vis[arr[point][i]]=true;_Search(arr[point][i],step+1,ans+1);vis[arr[point][i]]=false;/*cout<<point<<step<<ans<<"to\n";*/}
 }
 signed main()
 {
