@@ -2,4 +2,3 @@
 .vscode/
 .github/
 *.exe
-!.cph/template.don't_delete.cpp
